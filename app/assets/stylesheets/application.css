@@ -13,3 +13,93 @@
  *= require_tree .
  *= require_self
  */
+/*Variables*/
+
+
+/*----------------NavBar CSS--------------- */
+.navbar{
+  height:160px;
+  background-color:black;
+}
+
+.nav{
+  background-color:black;
+}
+/*Custom CSS for my Navbar*/
+#myNavbar{
+  margin-right: 75px;
+
+}
+
+li{
+  padding:10px;
+  border-right: 3px solid white;
+}
+
+/*No line on the last item in the list*/
+li:last-child{
+  border-right:none;
+}
+
+
+
+/*Body padding to prevent navbar hiding text*/
+body{
+  padding-top:160px;
+}
+
+/*Fonts*/
+.icon-bar{
+  background-color:white;
+}
+
+a{
+  color:white;
+  font-size: 1.5em;
+}
+
+#myNavbar a:hover{
+  background-color:black;
+  color:#3399FF;
+}
+
+/*----------------Logo CSS--------------- */
+.logo{
+  width:20%;
+}
+
+/*Logo media queries for phones*/
+/*Mobile Phones*/
+@media only screen and (max-width: 535px) {
+  li{
+    border-right:0;
+  }
+
+  .logo{
+    width:70%;
+  }
+
+  #myNavbar{
+    margin-right:0;
+  }
+}
+
+/*Tablets*/
+@media only screen and (min-width: 534px) and (max-width:900px){
+  .logo{
+    width:45%;
+  }
+  li{
+    margin-left:0;
+    margin-right:0;
+  }
+  #myNavbar{
+    margin-right:0;
+  }
+
+}
+/*Hover to make the image bigger!*/
+.logo:hover{
+  transform: scale(1.2);
+  transition: transform .3s ease-out;
+}
