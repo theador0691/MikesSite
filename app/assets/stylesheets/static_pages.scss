@@ -5,14 +5,13 @@
 
 // Index place
 
-$white: #fff;
+$white: #000;
 
-.backgroundImage{
-  position: fixed;
-  top: 0;
-  left: 0;
+////////// About Page////////////
 
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
+
+#mikePhoto {
+  border-radius:90%;
+  margin-top:auto;
+  background-color:$white
 }
